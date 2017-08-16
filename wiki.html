@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Wikipedia Viewer </title>
+  <link href="wiki.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+<div id="search_box">
+  <h1>Wikipedia Viewer</h1>
+  <form>
+    <input type="text" name="search" id="search" placeholder="Search Here" required />
+    <!-- cannot use <button> -->
+    <input type="button" id="search" onClick="wikiSearch()" value="Search" />
+   <button type="reset" value="Reset">Clear</button>
+  </form>
+  <br>
+  <a href= "https://en.wikipedia.org/wiki/Special:Random" target="_blank"> <button id="random"> Random Search</button> </a>
+</div>
+  <div id="search_result"></div>
+</div>
+
+<footer> <small>freeCodeCamp Project -- Created by Yueqi Su </small> </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="wiki.js" type="text/javascript"></script>
+
+</body>
+</html>
